@@ -1,0 +1,23 @@
+{
+  "config": {
+    "flow_title": "Eldom",
+    "step": {
+      "user": {
+        "description": "Set up your Eldom heater to integrate with Home Assistant.",
+        "title": "Connect to MyEldom",
+        "data": {
+          "username": "[%key:common::config_flow::data::username%]",
+          "password": "[%key:common::config_flow::data::password%]"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect, please try again",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  }
+}
